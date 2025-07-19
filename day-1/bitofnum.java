@@ -6,6 +6,7 @@ public class bitofnum {
             binary=(a%2)+binary;
             a=a/2;
         }
+        System.err.println("hello world");
         System.out.println(binary);
     }
     
