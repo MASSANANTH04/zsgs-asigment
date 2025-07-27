@@ -1,5 +1,4 @@
 package store;
-
 public class inventorysystrm {
     public static void main(String[] args) {
         prodict p=new prodict("HYPER Market","chennai");

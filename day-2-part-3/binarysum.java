@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//day=2 part-2 1
 public class binarysum {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);

@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class strsum {
-    public static void main(String[] args) {
+    
+    public static void main(String[] aannth) {
         Scanner scan=new Scanner(System.in);
         System.out.print("Enter First number: ");
         String strnum1=scan.nextLine();
