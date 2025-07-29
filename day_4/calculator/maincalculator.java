@@ -61,7 +61,7 @@ public class maincalculator {
                  a=scan.nextInt();
                  System.out.print(" Secound number: ");
                  b=scan.nextInt();
-                    add.sub(a, b);
+                    add.div(a,b);
                     break;
                 case 5:
                 System.out.print("Enter Base value: ");
