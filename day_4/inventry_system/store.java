@@ -1,5 +1,5 @@
 package inventry_system;
-import store.prodict;
+
 
 
 import java.util.ArrayList;

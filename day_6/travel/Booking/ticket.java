@@ -1,6 +1,6 @@
 package day_6.travel.Booking;
 import day_6.travel.User.user;
-import store.prodict;
+
 public class ticket {
 
     public String ticket_id;

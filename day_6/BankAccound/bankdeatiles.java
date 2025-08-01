@@ -1,7 +1,8 @@
+//question 5
 package day_6.BankAccound;
 
 import inventry_system.product;
-import store.prodict;
+
 
 public class bankdeatiles {
     private long Account_number;

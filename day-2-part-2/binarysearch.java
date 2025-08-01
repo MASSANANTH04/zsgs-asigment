@@ -25,7 +25,7 @@ public class binarysearch {
     int n=a.nextInt();
     int array[]=new int[n];
     for(int i=0;i<array.length;i++){
-        System.out.print("Enter "+1+" st number in array:");
+        System.out.print("Enter "+(i+1)+" st number in array:");
         array[i]=a.nextInt();
     }
     int[] sort =new int[n];
