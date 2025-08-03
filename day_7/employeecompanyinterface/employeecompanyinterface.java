@@ -1,21 +1,11 @@
-//question 3
-package day_7.employescompany;
-abstract class Employee{
-    String name;
-    String workingtype;
-    Employee(String name,String workingtype){
-        System.out.println("                     Employee Deatiles");
-        this.name=name;
-        this.workingtype=workingtype;
-        
-    }
-    abstract void calculatesalary();
+package day_7.employeecompanyinterface;
+interface employee{
+    void calculatesalary();
 }
-class Fulltimeemployee extends Employee{
+class Fulltimeemployee implements employee{
     double salary;
-    Fulltimeemployee(String name,String workingtype,double salaey){
-        super(name,workingtype);
-        this.salary=salaey;
+   Fulltimeemployee(  String name,String workingtype,double salaey){
+    this.salary=salaey;
         System.out.println("-------------------------------------------------");
         System.out.println("                FullTime Employee");
         System.out.println("                ^^^^^^^^ ^^^^^^^^");
@@ -23,18 +13,16 @@ class Fulltimeemployee extends Employee{
         System.out.println("Employee working type: "+workingtype);
         System.out.println("Salary per Month: "+salaey);
         System.out.println("--------------------------------------------------");
-    }
-    void calculatesalary(){
-        
+   }
+ public void calculatesalary(){
         System.out.println("Employee Salary per Year: "+salary*12);
         System.out.println("***************************************************");
     }
 }
-class parttimeemployee extends Employee{
+class parttimeemployee implements employee{
     int workinghours;
     double workhourpersalary;
-      parttimeemployee(String name,String workingtype,int workinghours,double workhourpersalary){
-        super(name,workingtype);
+    parttimeemployee(String name,String workingtype,int workinghours,double workhourpersalary){
         this.workinghours=workinghours;
         this.workhourpersalary=workhourpersalary;
         System.out.println("-------------------------------------------------");
@@ -45,18 +33,18 @@ class parttimeemployee extends Employee{
         System.out.println("Working Time houre: "+workinghours);
         System.out.println("Salary  hours: "+workhourpersalary);
         System.out.println("--------------------------------------------------");
-        
     }
-    void calculatesalary(){
-        System.out.println();
+    public void calculatesalary(){
+         System.out.println();
         System.out.println("Partime Employe Salary per month: "+(25*workhourpersalary));
     }
 }
-public class employecompany {
+
+public class employeecompanyinterface {
     public static void main(String[] args) {
-        Employee emp1=new Fulltimeemployee("Ananth","Fulltime",30000.78);
-        emp1.calculatesalary();
-        Employee emp2=new parttimeemployee("Sri Rengan", "Parttime", 5, 1200);
-        emp2.calculatesalary();
+        Fulltimeemployee fobj=new Fulltimeemployee("Ananth", "Full timt", 23000);
+        fobj.calculatesalary();
+        parttimeemployee pobj=new parttimeemployee("Mani kandan", "part Time", 5, 1000);
+        pobj.calculatesalary();
     }
 }
