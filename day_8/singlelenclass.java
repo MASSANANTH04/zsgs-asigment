@@ -1,5 +1,5 @@
 //question-1
-package day_8;
+
 class singlelen{
     static singlelen singlelenobj=null;
     private singlelen(){

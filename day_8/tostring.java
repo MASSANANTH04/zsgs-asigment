@@ -1,7 +1,7 @@
-package day_8;
 
 
 
+//question-7
 class ananth{
     String name;
     int age;
